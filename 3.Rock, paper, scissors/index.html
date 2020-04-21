@@ -5,27 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <h1>Rock, paper, scissors</h1>
-    <h3>Player 1</h3>
+    <div class="container">
+        <h1>Rock, paper, scissors</h1>
+        <p>Rules:</p>
+        <ol>
+            <li>Rock beats scissors.</li>
+            <li>Paper beats rock.</li>
+            <li>Scissors beats paper.</li>
+        </ol>
+        <div class="flex">
+            <div class="player">
+                <h3>Player 1</h3>
+                <p>Pick your wapeon of choice!</p>
+                <button id="rock1">rock</button>
+                <button id="paper1">paper</button>
+                <button id="scissors1">scissors</button>
+            </div>
 
-    <button id="rock1">rock</button>
-    <button id="paper1">paper</button>
-    <button id="scissors1">scissors</button>
+            <div class="player">
+                <h3>Player 2</h3>
+                <p>Pick your wapeon of choice!</p>
+                <button id="rock2">rock</button>
+                <button id="paper2">paper</button>
+                <button id="scissors2">scissors</button>
+            </div>
+        </div>
 
-    <h3>Player 2</h3>
+        <p id="p1choice">Player 1 didn't pick a wapeon yet.</p>
+        <p id="p2choice">Player 2 didn't pick a wapeon yet.</p>
 
-    <button id="rock2">rock</button>
-    <button id="paper2">paper</button>
-    <button id="scissors2">scissors</button>
+        <h3 id="winner"></h3>
 
+    </div>
 
-
-
-    <script src="jquery-3.5.0.js"></script>
-    <script src="myscript.js"></script>
+    <script src="js/jquery-3.5.0.js"></script>
+    <script src="js/myscript.js"></script>
 </body>
 
 </html>
